@@ -86,11 +86,11 @@ wget -O /root/.bashrc "https://raw.githubusercontent.com/macisvpn/premiumnow/mas
 sudo apt-get -y install ruby
 sudo gem install lolcat
 # script
-wget -O /etc/pam.d/common-password "https://raw.githubusercontent.com/macisvpn/inject-69/master/common-password"
+wget -O /etc/pam.d/common-password "https://raw.githubusercontent.com/macisvpn/inject-69/common-password"
 chmod +x /etc/pam.d/common-password
 # fail2ban & exim & protection
 apt-get -y install fail2ban sysv-rc-conf dnsutils dsniff zip unzip;
-wget https://raw.githubusercontent.com/macisvpn/inject-69/master/master.zip;unzip master.zip;
+wget https://github.com/jgmdev/ddos-deflate/archive/master.zip;unzip master.zip;
 cd ddos-deflate-master && ./install.sh
 service exim4 stop;sysv-rc-conf exim4 off;
 # webmin
